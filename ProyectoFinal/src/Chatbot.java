@@ -6,4 +6,5 @@ public class Chatbot {
 	ArrayList<String> tags = new ArrayList<String>();
 	
 	
+	}
 }
