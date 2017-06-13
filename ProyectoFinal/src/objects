@@ -1,0 +1,51 @@
+LA POBLACION:person,group
+LOS SOBREVIVIENTES:person,group,survive
+LA BOMBERA/EL BOMBERO:person,fire
+LA REPORTERA/EL REPORTERO:person,news
+LA PARAMEDICA/EL PARAMEDICO:person,heal
+EL ERUPCION DE VOLCAN:disaster,smoke,lava
+LA CENIZA:disaster,smoke,aftervolc
+EL INCENDIO FORESTAL:disaster,smoke
+EL HURACAN:disaster,wind
+EL TERREMOTO:disaster,shake
+LAS REPLICAS:disaster,shake,afterearth
+EL TSUNAMI:disaster,shake,afterearth,water
+LA INUNDACION:disaster,rain
+LA LLUVIA:weather,wash
+EL VIENTO:weather,trees
+LA NIEVE:weather,winter
+LAS NUBES:weather,fluffy
+LA TORMENTA:weather,causerain
+LAS NOTICIAS:duringdis
+EL ARTICULO:duringdis,read
+EL RESCATE:heal
+EL EDIFICO:effectdis,falls
+LA EXPLOSION:effectdis,fire
+LAS VIVIENDAS:effectdis,live
+EL DAÑO:effectdis,ruin
+LOS MARISCOS:food,recipe,meat,ocean
+EL PULPO:food,recipe,meat,ocean,eight
+LOS CALAMARES:food,recipe,meat,ocean,head
+EL BACALAO:food,recipe,meat,ocean,fish
+LOS CAMARONES:food,recipe,meat,ocean,small
+EL CHORIZO:food,recipe,meat,sausage
+LA MORCILLA:food,recipe,meat,sausage,blood
+EL JAMON SERRANO:food,recipe,meat
+EL ARROZ:food,recipe,arabs,grain
+LA BERENJENA:food,recipe,arabs,veggie,purple
+LA ALCACHOFA:food,recipe,arabs,veggie,heart
+LA NARANJA:food,recipe,arabs,fruit
+LAS ALMENDRAS:food,recipe,arabs,nut
+EL AZAFRAN:food,recipe,arabs,spice
+EL ACEITE DE OLIVA:food,recipe,arabs,cook
+LOS HUEVOS:food,recipe,Jose
+EL QUESO MANCHEGO:food,recipe,milk
+EL VINO BLANCO:food,recipe,wine
+EL VINO TINTO:food,recipe,wine,colorless
+LA CEBOLLA:food,recipe,veggie,round
+EL TOMATE:food,recipe,veggie,round,red
+EL AJO:food,recipe,veggie,smell
+LA PATATA:food,recipe,veggie,root
+EL PIMIENTO ROJO:food,recipe,veggie,red
+LA SAL:food,recipe,spice,salty 
+

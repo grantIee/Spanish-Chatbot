@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Chatbot {
-	
-	ArrayList<Ans> full = new ArrayList<Ans>();
-	
+	public static void main(String[] args) {
+	ArrayList<Ans> objects = new ArrayList<Ans>();
+	ArrayList<String> tags = new ArrayList<String>();
 	
 	
 }
