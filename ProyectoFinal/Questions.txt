@@ -1,65 +1,64 @@
-Tiene una receta?:food:needrec
-Es una carne:food:meat
-Son del mar?:food:ocean
-Tiene ocho patas (legs)?:food:eight
-Tiene una caesa(head) muy larga?:food:head
-Es un pescado?:food:fish
-Es pequeno?:food:small
-Es similar a una salchicha (sausage)?:food:sausage
-Tiene sangre (blood)?:food:blood
-Tiene jamon?:food:pork
-Tiene influencia Arabe?:food:arabs
-Es un grano?:food:grain
-Es una verdura (vegetable)?:food:veggie
-Es purpura?:food:purple
-Es una fruta?:food:fruit
-Es un nuez (nut)?:food:nut
-Es una especia (spice)?:food:spice
-Lo usas para cocinar?:food:cook
-Es el amor de Jose Andres?:food:Jose
-Es de leche?:food:milk
-Tiene ingredientes de Las Americas?:food:americas
-Tiene tomates?:food:tomato
-Tiene pescados y/o mariscos?:food:seaf
-Tiene las patatas?:food:potato
-Tiene almendras?:food:almond
-Es un bebida?:food:drink
-Es de Espana?:food:spain
-Tiene masa (dough)?:food:dough
-Es mas o menos sabroso (savory, in this context)?:food:salty
-Es frito?:food:fried
-Es un vino?:food:wine
-Es un bebida sin color?:food:colorless
-Es un bebida con color?:food:color
-Tiene capas (layers)?:food:layers
-Es rojo?:food:red
-Es blanco?:food:white
-Tiene un corazon (heart)?:food:heart
-Es un raiz(root)?:food:root
-Es salado (salty)?:food:salty
-Es un persona?:disaster:person
-Es un groupo de personas?:disaster:group
-Es personas sobreviven?:disaster:survive
-Ello luchar contro fuego (fight fire)?:disaster:fire
-Ello reporte las noticias?:disaster:news
-Ello poner primeros auxilios (first aid)?:disaster:heal
-Tiene ceniza?:disaster:smoke
-Tiene lava?:disaster:lava
-Es despues el erupcion de volcan?:disaster:aftervolc
-Tiene fuego?:disaster:fire
-Tiene mucho viento?:disaster:wind
-Tiene tierra moverse?:disaster:shake
-Es despues de terremoto?:disaster:afterearth
-Es despues mucha lluvia o hay mucha lluvia?:disaster:rain
-Es un tiempo (weather)?:disaster:weather
-Es un tiempo comun en Washington?:disaster:wash
-Esto Estruir arboles (knock down trees)?:disaster:trees
-Es durante el invierno?:disaster:winter
-Es esponjoso (fluffy):disaster:fluffy
-Ves durante la desastre:disaster:duringdis
-Es un objecto de leer?:disaster:read
-Es un accion de paramedico?:disaster:heal
-Es consecuencia despues de desastre?:disaster:effectdis
-Esto caerse (to fall)?:disaster:falls
-Esto es un edificio de vivir?:disaster:live
-Esto es destructivo?:disaster:ruin
+¿Necesitar una receta?:food:needrec
+¿Es una carne?:food:meat
+¿Son del mar?:food:ocean
+¿Tiene ocho patas (legs)?:food:eight
+¿Tiene una cabeza(head) muy larga?:food:head
+¿Es un pescado?:food:fish
+¿Es pequeño?:food:small
+¿Es similar a una salchicha (sausage)?:food:sausage
+¿Tiene sangre (blood)?:food:blood
+¿Tiene jamón?:food:pork
+¿Tiene influencia arabe?:food:arabs
+¿Es un grano?:food:grain
+¿Es una verdura (vegetable)?:food:veggie
+¿Es morado?:food:purple
+¿Es una fruta?:food:fruit
+¿Es un nuez (nut)?:food:nut
+¿Es una especia (spice)?:food:spice
+¿Lo usas para cocinar?:food:cook
+¿Es el amor de José Andrés?:food:Jose
+¿Es de leche?:food:milk
+¿Tiene ingredientes de las Américas?:food:americas
+¿Tiene tomates?:food:tomato
+¿Tiene pescados y/o mariscos?:food:seaf
+¿Tiene las patatas?:food:potato
+¿Tiene almendras?:food:almond
+¿Es una bebida?:food:drink
+¿Es de España?:food:spain
+¿Tiene masa (dough)?:food:dough
+¿Es de frito?:food:fried
+¿Es un vino?:food:wine
+¿Es un vino sin color?:food:colorless
+¿Es un vino con color?:food:color
+¿Tiene capas (layers)?:food:layers
+¿Es rojo?:food:red
+¿Es blanco?:food:white
+¿Tiene un corazón (heart)?:food:heart
+¿Es un raíz(root)?:food:root
+¿Es salado (salty)?:food:salty
+¿Es un persona?:disaster:person
+¿Es un grupo de personas?:disaster:group
+¿Es un grupo de personas sobrevive?:disaster:survive
+¿Es una persona quien luchar fuego?:disaster:fire
+¿Es una persona quien informar las noticias?:disaster:news
+¿Es una persona quien poner primeros auxilios?:disaster:heal
+¿Tiene ceniza?:disaster:smoke
+¿Tiene lava?:disaster:lava
+¿Es después el erupción de volcan?:disaster:aftervolc
+¿Tiene fuego?:disaster:fire
+¿Tiene mucho viento?:disaster:wind
+¿Tiene tierra moverse?:disaster:shake
+¿Es después de terremoto?:disaster:afterearth
+¿Es después mucha lluvia o hay mucha lluvia?:disaster:rain
+¿Es un tiempo (weather)?:disaster:weather
+¿Es un tiempo común en Washington?:disaster:wash
+¿Puedes destruir árboles (knock down trees)?:disaster:trees
+¿Es durante el invierno?:disaster:winter
+¿Es esponjoso (fluffy):disaster:fluffy
+¿Ves durante el desastre:disaster:duringdis
+¿Es un objeto de leer?:disaster:read
+¿Es un acción del paramédico?:disaster:heal
+¿Es consecuencia después del desastre?:disaster:effectdis
+¿Durante un desastre puedes caerse (to fall)?:disaster:falls
+¿Es un edificio de vivir?:disaster:live
+¿Es destructivo?:disaster:ruin

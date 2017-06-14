@@ -14,150 +14,190 @@ import java.util.Scanner;
  */
 public class Chatbot {
 	public static void main(String[] args) throws FileNotFoundException {
-		System.out.println("Hola!  Yo soy un proyecto de Grant y Everett");
-		System.out.println("Quiero pensar un objeto de comidas o desastre.");
-		System.out.println("Yo pregunto preguntas que tu objeto.  Repuesta si o no.");
+		System.out.println("¡Hola!  Yo soy un proyecto de Grant y Everett");
+		System.out.println("Piensas un objeto para yo suponer, por favor.");
+		System.out.println("Yo hago preguntas de tu objeto.  Repuesta si o no.");
 		Scanner input = new Scanner(System.in);
 		Scanner getQ;
 		File f = new File("Objects.txt");
 		File q = new File("Questions.txt");
 		Scanner file;
-		
-		if(f.exists()&& q.exists()){
-			file = new Scanner(f);
-			getQ = new Scanner(q);
-			ArrayList<Ans> objects = new ArrayList<Ans>(100);
-			ArrayList<String> tags = new ArrayList<String>();
-			ArrayList<Qes> questions = new ArrayList<Qes>(100);
-			while(file.hasNextLine()){
-				objects.add(new Ans(file.nextLine()));
-			}
-			/*
-			while(getQ.hasNextLine()){
-				questions.add(new Qes(getQ.nextLine()));
-			}
-			System.out.println("File load successful!  ");
-			ArrayList<Ans> lvl1 = new ArrayList<Ans>(100);
-			for(int i = 0; i < objects.size(); i ++){
-				if()
-			}
-			*/
-			
-			
-			//Preliminary questions, to split between food and disasters.
-			System.out.println("Es un comida o un desastre?");
-			String choice = input.nextLine().toLowerCase();
-			boolean valid = false;
-			while(!valid){
-				if(choice.indexOf("food") != -1|| choice.indexOf("comida") != -1){
-					valid = true;
-					for(int i = 0; i < objects.size(); i ++){
-						if(!objects.get(i).tagMatch("food")){
-							//System.out.println(objects.get(i).toString());
-							objects.remove(i);
-							i --;
-						}
-					}
-					for(int i = 0; i < questions.size(); i ++){
-						if(!questions.get(i).getSuperTag().equals("food")){
-							questions.remove(i);
-							i --;
-						}
-					}
+		boolean playing = true;
+		while(playing){
+			if(f.exists()&& q.exists()){
+				file = new Scanner(f);
+				getQ = new Scanner(q);
+				ArrayList<Ans> objects = new ArrayList<Ans>(100);
+				ArrayList<String> tags = new ArrayList<String>();
+				ArrayList<Qes> questions = new ArrayList<Qes>(100);
+				while(file.hasNextLine()){
+					objects.add(new Ans(file.nextLine()));
 				}
-				else if(choice.indexOf("disaster") != -1|| choice.indexOf("desastre") != -1){
-					valid = true;
-					for(int i = 0; i < objects.size(); i ++){
-						if(!objects.get(i).tagMatch("disaster")){
-							objects.remove(i);
-							i --;
-						}
-					}
-					for(int i = 0; i < questions.size(); i ++){
-						if(!questions.get(i).getSuperTag().equals("disaster")){
-							questions.remove(i);
-							i --;
-							
-						}
-					}
+				while(getQ.hasNextLine()){
+					questions.add(new Qes(getQ.nextLine()));
 				}
-				else{
-					System.out.println("Un entrada no valido (Invalid Input)! Quiere endrada otra vez!");
-					choice = input.nextLine().toLowerCase();
+				/*
+				while(getQ.hasNextLine()){
+					questions.add(new Qes(getQ.nextLine()));
 				}
-			}
-			while(objects.size() > 5){
-				
-				ArrayList<Ans> backupArray= new ArrayList<Ans>(objects.size());
+				System.out.println("File load successful!  ");
+				ArrayList<Ans> lvl1 = new ArrayList<Ans>(100);
 				for(int i = 0; i < objects.size(); i ++){
-					backupArray.add(i,objects.get(i).clone());
+					if()
 				}
+				*/
 				
-				Qes qes = questions.get((int)(Math.random() * questions.size()));
-				System.out.println(qes.getName());
-				String filterKeyword = input.nextLine();
-				if(filterKeyword.toLowerCase().indexOf("yes") != -1 || filterKeyword.toLowerCase().indexOf("si") != -1){
-					for(int i = 0; i < objects.size(); i ++){
-						if(!objects.get(i).tagMatch(qes.getTag())){
-							objects.remove(i);
-							i --;
-						}
-						else{
-							//System.out.println(objects.get(i).fullToString());
-						}
+				
+				//Preliminary questions, to split between food and disasters.
+				System.out.println("¿Es una comida o un desastre?");
+				String choice = input.nextLine().toLowerCase();
+				boolean valid = false;
+				while(!valid){
+					while(file.hasNextLine()){
+						objects.add(new Ans(file.nextLine()));
 					}
-					if(objects.size() < 1){
-						System.out.println("To tengo repuestas (No availiable answers)!  Creo repuestas valido (loading last state)...");
-						objects = backupArray;
-						//System.out.println(objects.size());
+					while(getQ.hasNextLine()){
+						questions.add(new Qes(getQ.nextLine()));
 					}
-					//trimming quesetion array;
-					String taglist = ""; //first we find all active tags
-					for(int i = 0; i < objects.size(); i ++){
-						for(int j = 0; j < objects.get(i).getTag().length; j ++){
-							if(taglist.indexOf(objects.get(i).getTag()[j]) == -1){
-								taglist += objects.get(i).getTag()[j];
-								//System.out.print(objects.get(i).getTag()[j] + ", ");
+					if(choice.indexOf("food") != -1|| choice.indexOf("comida") != -1){
+						valid = true;
+						for(int i = 0; i < objects.size(); i ++){
+							if(!objects.get(i).tagMatch("food")){
+								//System.out.println(objects.get(i).toString());
+								objects.remove(i);
+								i --;
 							}
 						}
-							
-					}
-					// then we remove questions corresponding to inactive tags.
-					for(int k = 0; k < questions.size(); k ++){
-						if(taglist.indexOf(questions.get(k).getTag()) == -1){
-							//System.out.print(questions.get(k).getName() + ", ");
-							questions.remove(k);
-							k --;
-							
+						for(int i = 0; i < questions.size(); i ++){
+							if(!questions.get(i).getSuperTag().equals("food")){
+								questions.remove(i);
+								i --;
+							}
 						}
 					}
+					else if(choice.indexOf("disaster") != -1|| choice.indexOf("desastre") != -1){
+						valid = true;
+						for(int i = 0; i < objects.size(); i ++){
+							if(!objects.get(i).tagMatch("disaster")){
+								objects.remove(i);
+								i --;
+							}
+						}
+						for(int i = 0; i < questions.size(); i ++){
+							if(!questions.get(i).getSuperTag().equals("disaster")){
+								questions.remove(i);
+								i --;
+								
+							}
+						}
+					}
+					else{
+						System.out.println("Un entrada no valido (Invalid Input)! Quiere endrada otra vez!");
+						choice = input.nextLine().toLowerCase();
+					}
 				}
-				//Trimming question array
-				
-				
-			}	
-			int reps = 0;
-			while(objects.size() > 0){
-				System.out.println("Es " + objects.get(reps) + "?");
-				String filterKeyword = input.nextLine().toLowerCase();
-				
-				if(filterKeyword.equals("si") || filterKeyword.equals("yes")){
-					System.out.println("Yo gano!");
-					break;
+				while(objects.size() > 5){
 					
+					ArrayList<Ans> backupArray= new ArrayList<Ans>(objects.size());
+					for(int i = 0; i < objects.size(); i ++){
+						backupArray.add(i,objects.get(i).clone());
+					}
+					int qchoice = (int)(Math.random() * questions.size());
+					Qes qes = questions.get(qchoice);
+					System.out.println(qes.getName());
+					String filterKeyword = input.nextLine();
+					if(filterKeyword.toLowerCase().indexOf("yes") != -1 || filterKeyword.toLowerCase().indexOf("si") != -1){
+						for(int i = 0; i < objects.size(); i ++){
+							if(!objects.get(i).tagMatch(qes.getTag())){
+								objects.remove(i);
+								i --;
+								//questions.remove(qchoice);
+							}
+							else{
+								//questions.remove(qchoice);
+								//System.out.println(objects.get(i).fullToString());
+							}
+						}
+						if(objects.size() < 1){
+							System.out.println("¡No tengo repuestas (No availiable answers)!  Creo repuestas valido (loading last state)...");
+							objects = backupArray;
+							//System.out.println(objects.size());
+						}
+						
+						questions.remove(qchoice);
+						//trimming quesetion array;
+						String taglist = ""; //first we find all active tags
+						for(int i = 0; i < objects.size(); i ++){
+							for(int j = 0; j < objects.get(i).getTag().length; j ++){
+								if(taglist.indexOf(objects.get(i).getTag()[j]) == -1){
+									taglist += objects.get(i).getTag()[j];
+									//System.out.print(objects.get(i).getTag()[j] + ", ");
+								}
+							}
+								
+						}
+						// then we remove questions corresponding to inactive tags.
+						for(int k = 0; k < questions.size(); k ++){
+							if(taglist.indexOf(questions.get(k).getTag()) == -1){
+								//System.out.print(questions.get(k).getName() + ", ");
+								questions.remove(k);
+								k --;
+								
+							}
+						}
+						
+					}
+					else{
+						questions.remove(qchoice);
+					}
+					
+					//Trimming question array
+					
+					
+				}	
+				int reps = 0;
+				while(objects.size() > reps){
+					System.out.println("¿Es " + objects.get(reps) + "?");
+					String filterKeyword = input.nextLine().toLowerCase();
+					
+					if(filterKeyword.equals("si") || filterKeyword.equals("yes")){
+						System.out.println("¡Yo gano!");
+						System.out.println("¿Tu queres jugar otra vez?");
+						filterKeyword = input.nextLine().toLowerCase();
+						if(filterKeyword.equals("si")){
+							valid = true;
+						}
+						else{
+							valid = false;
+						}
+						
+						
+					}
+					else{
+						//System.out.println("¡Tu gane!");
+					
+						if(objects.size() <= 1){
+							System.out.println("¡Yo dejo de ganar!  !Tu gane!");
+							System.out.println("¿Tu queres jugar otra vez?");
+							filterKeyword = input.nextLine().toLowerCase();
+							if(filterKeyword.equals("si")){
+								valid = true;
+							}
+							else{
+								valid = false;
+							}
+							
+						}
+						
+					}
+					reps ++;					
 				}
-				if(objects.size() <= 1){
-					System.out.println("Yo dejo de ganar!  Tu gane!");
-					break;
-				}
-			
+				
 				
 			}
-			
-			
+			else{
+				System.out.println("Error! File status: "+ f.getName() + " exists: " + f.exists() + " " + q.getName() + " exists: " + q.exists());
+			}
 		}
-		else{
-			System.out.println("Error! File status: "+ f.getName() + " exists: " + f.exists() + " " + q.getName() + " exists: " + q.exists());
-		}	
 	}
 }
