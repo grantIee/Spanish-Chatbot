@@ -4,7 +4,7 @@ LA BOMBERA/EL BOMBERO:person,fire
 LA REPORTERA/EL REPORTERO:person,news
 LA PARAMÉDICA/EL PARAMÉDICO:person,heal
 EL ERUPCIÓN DE VOLCÁN:disaster,smoke,lava
-LA CENIZA:disaster,smoke,aftervolc
+LA CENIZA:disaster,smoke,lava,aftervolc
 EL INCENDIO FORESTAL:disaster,smoke
 EL HURACÁN:disaster,wind
 EL TERREMOTO:disaster,shake
@@ -30,7 +30,7 @@ EL BACALAO:food,recipe,meat,ocean,fish
 LOS CAMARONES:food,recipe,meat,ocean,small
 EL CHORIZO:food,recipe,meat,sausage
 LA MORCILLA:food,recipe,meat,sausage,blood
-EL JAMÓN SERRANO:food,recipe,meat
+EL JAMÓN SERRANO:food,recipe,meat,pork
 EL ARROZ:food,recipe,arabs,grain
 LA BERENJENA:food,recipe,arabs,veggie,purple
 LA ALCACHOFA:food,recipe,arabs,veggie,heart
@@ -40,9 +40,9 @@ EL AZAFRÁN:food,recipe,arabs,spice
 EL ACEITE DE OLIVA:food,recipe,arabs,cook
 LOS HUEVOS:food,recipe,Jose
 EL QUESO MANCHEGO:food,recipe,milk
-EL VINO BLANCO:food,recipe,wine
-EL VINO TINTO:food,recipe,wine,colorless
-LA CEBOLLA:food,recipe,veggie,round
+EL VINO BLANCO:food,recipe,wine,colorless
+EL VINO TINTO:food,recipe,wine,color
+LA CEBOLLA:food,recipe,veggie,round,layers
 EL TOMATE:food,recipe,veggie,round,red
 EL AJO:food,recipe,veggie,smell
 LA PATATA:food,recipe,veggie,root
@@ -51,11 +51,11 @@ LA SAL:food,recipe,spice,white
 LA PIMIENTA:food,recipe,spice,black
 EL PIMENTÓN:food,recipe,spice,red
 EL PAN:food,needrec,grain
-EL GAZPACHO:needrec,americas,tomat
-LA PAELLA:needrec,americas,seaf
-LA TORTILLA DE PATATAS:needrec,americas,pota
-LA HORCHATA:needrec,arab,almond,drink
-EL TURRÓN:needrec,arab,almond
-EL CHURRO:needrec,spain,sweet
-LAS CROQUETAS:needrec,spain,fried 
+EL GAZPACHO:food,needrec,americas,tomat
+LA PAELLA:food,needrec,americas,seaf
+LA TORTILLA DE PATATAS:food,needrec,americas,pota
+LA HORCHATA:food,needrec,arab,almond,drink
+EL TURRÓN:food,needrec,arab,almond
+EL CHURRO:food,needrec,spain,dough,sweet
+LAS CROQUETAS:food,needrec,spain,fried 
 
