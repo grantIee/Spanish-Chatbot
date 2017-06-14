@@ -43,9 +43,9 @@ public class Chatbot {
 			}
 			*/
 			
-			System.out.println("Answer these questions:");
+			
 			//Preliminary questions, to split between food and disasters.
-			System.out.println("Is it a food or a disaster?");
+			System.out.println("Es un comida o un desastre?");
 			String choice = input.nextLine().toLowerCase();
 			boolean valid = false;
 			while(!valid){
@@ -82,7 +82,7 @@ public class Chatbot {
 					}
 				}
 				else{
-					System.out.println("Invalid input!  Enter either food/comida or disaster/desastre!");
+					System.out.println("Un entrada no valido (Invalid Input)! Quiere endrada otra vez!");
 					choice = input.nextLine().toLowerCase();
 				}
 			}
@@ -107,7 +107,7 @@ public class Chatbot {
 						}
 					}
 					if(objects.size() < 1){
-						System.out.println("No answers fit your answer!  Loading last state...");
+						System.out.println("To tengo repuestas (No availiable answers)!  Creo repuestas valido (loading last state)...");
 						objects = backupArray;
 						//System.out.println(objects.size());
 					}
@@ -142,12 +142,12 @@ public class Chatbot {
 				String filterKeyword = input.nextLine().toLowerCase();
 				
 				if(filterKeyword.equals("si") || filterKeyword.equals("yes")){
-					System.out.println("I win!");
+					System.out.println("Yo gano!");
 					break;
 					
 				}
 				if(objects.size() <= 1){
-					System.out.println("I give up!  You win!");
+					System.out.println("Yo dejo de ganar!  Tu gane!");
 					break;
 				}
 			
