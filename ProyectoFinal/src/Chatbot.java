@@ -15,8 +15,8 @@ import java.util.Scanner;
 public class Chatbot {
 	public static void main(String[] args) throws FileNotFoundException {
 		System.out.println("Hola!  Yo soy un proyecto de Grant y Everett");
-		System.out.println("Please think of either something that has to do with disasters or food.");
-		System.out.println("I will ask you questions, please answer to the best of your ability.");
+		System.out.println("Quiero pensar un objeto de comidas o desastre.");
+		System.out.println("Yo pregunto preguntas que tu objeto.  Repuesta si o no.");
 		Scanner input = new Scanner(System.in);
 		Scanner getQ;
 		File f = new File("Objects.txt");
@@ -32,10 +32,17 @@ public class Chatbot {
 			while(file.hasNextLine()){
 				objects.add(new Ans(file.nextLine()));
 			}
+			/*
 			while(getQ.hasNextLine()){
 				questions.add(new Qes(getQ.nextLine()));
 			}
 			System.out.println("File load successful!  ");
+			ArrayList<Ans> lvl1 = new ArrayList<Ans>(100);
+			for(int i = 0; i < objects.size(); i ++){
+				if()
+			}
+			*/
+			
 			System.out.println("Answer these questions:");
 			//Preliminary questions, to split between food and disasters.
 			System.out.println("Is it a food or a disaster?");
@@ -146,6 +153,7 @@ public class Chatbot {
 			
 				
 			}
+			
 			
 		}
 		else{
