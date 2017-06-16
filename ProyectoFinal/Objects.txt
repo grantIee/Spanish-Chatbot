@@ -1,0 +1,60 @@
+LA POBLACION:person,group,disaster
+LOS SOBREVIVIENTES:person,group,survive,disaster
+LA BOMBERA/EL BOMBERO:person,fire,disaster
+LA REPORTERA/EL REPORTERO:person,news,disaster
+LA PARAMÉDICA/EL PARAMÉDICO:person,heal,disaster
+EL ERUPCIÓN DE VOLCÁN:disaster,smoke,lava,fire
+LA CENIZA:disaster,smoke,lava,aftervolc
+EL INCENDIO FORESTAL:disaster,smoke, fire
+EL HURACÁN:disaster,wind,rain
+EL TERREMOTO:disaster,shake
+LAS RÉPLICAS:disaster,shake,afterearth
+EL TSUNAMI:disaster,shake,afterearth,water
+LA INUNDACIÓN:disaster,rain
+LA LLUVIA:weather,wash,disaster,rain
+EL VIENTO:weather,trees,disaster,wind
+LA NIEVE:weather,winter,disaster,fluffy
+LAS NUBES:weather,fluffy,disaster,rain
+LA TORMENTA:weather,rain,disaster,wind
+LAS NOTICIAS:duringdis,disaster,read
+EL ARTÍCULO:duringdis,read,disaster
+EL RESCATE:heal,disaster
+EL EDIFICO:effectdis,falls,disaster,live
+LA EXPLOSIÓN:effectdis,fire,disaster,smoke
+LAS VIVIENDAS:effectdis,live,disaster
+EL DAÑO:effectdis,ruin,disaster,fire,afterearth
+LOS MARISCOS:food,recipe,meat,ocean,
+EL PULPO:food,recipe,meat,ocean,eight
+LOS CALAMARES:food,recipe,meat,ocean,head,red
+EL BACALAO:food,recipe,meat,ocean,fish,white
+LOS CAMARONES:food,recipe,meat,ocean,small
+EL CHORIZO:food,recipe,meat,sausage,red,round,spain
+LA MORCILLA:food,recipe,meat,sausage,blood,red,round,spain
+EL JAMÓN SERRANO:food,recipe,meat,pork,red,spain
+EL ARROZ:food,recipe,arabs,grain,small,white,veggie
+LA BERENJENA:food,recipe,arabs,veggie,purple,round
+LA ALCACHOFA:food,recipe,arabs,veggie,heart
+LA NARANJA:food,recipe,arabs,fruit,round
+LAS ALMENDRAS:food,recipe,arabs,nut,almond
+EL AZAFRÁN:food,recipe,arabs,spice,red
+EL ACEITE DE OLIVA:food,recipe,arabs,cook,drink
+LOS HUEVOS:food,recipe,round,Jose,white
+EL QUESO MANCHEGO:food,recipe,milk,white
+EL VINO BLANCO:food,recipe,wine,colorless,white
+EL VINO TINTO:food,recipe,wine,color,red
+LA CEBOLLA:food,recipe,veggie,round,layers,stinky
+EL TOMATE:food,recipe,veggie,round,red
+EL AJO:food,recipe,veggie,smell,small,white,round
+LA PATATA:food,recipe,veggie,root,round
+EL PIMIENTO ROJO:food,recipe,veggie,red,round
+LA SAL:food,recipe,spice,white,salty
+LA PIMIENTA:food,recipe,spice,black
+EL PIMENTÓN:food,recipe,spice,red
+EL GAZPACHO:food,needrec,americas,tomato
+LA PAELLA:food,needrec,seaf, spain
+LA TORTILLA DE PATATAS:food,needrec,americas,potato, 
+LA HORCHATA:food,needrec,arab,almond,drink, sweet
+EL TURRÓN:food,needrec,arab,almond,sweet
+EL CHURRO:food,needrec,spain,dough,sweet, fried
+LAS CROQUETAS:food,needrec,spain,fried
+El PAN:food,spain,dough,salty,needrec, grain

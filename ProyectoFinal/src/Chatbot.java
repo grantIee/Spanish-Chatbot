@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Chatbot {
 	public static void main(String[] args) throws FileNotFoundException {
 		System.out.println("¡Hola!  Yo soy un proyecto de Grant y Everett");
-		System.out.println("Piensas un objeto para yo suponer, por favor.");
+		System.out.println("Piensa en un objeto, por favor.");
 		System.out.println("Yo hago preguntas de tu objeto.  Repuesta si o no.");
 		Scanner input = new Scanner(System.in);
 		Scanner getQ;
